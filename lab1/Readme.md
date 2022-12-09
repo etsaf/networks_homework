@@ -1,3 +1,5 @@
+Комментарии и описание ниже в Readme, конфиги всех устройств в папке configs, сама выгруженная лаба - файл homework1.unl
+
 **Топология**
 
 <img width="603" alt="Screenshot 2022-12-09 at 20 59 08" src="https://user-images.githubusercontent.com/89082482/206764140-8fe76cb1-860b-46c0-9134-ecb305f780cb.png">
