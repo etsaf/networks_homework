@@ -99,7 +99,8 @@ wr
 <img width="995" alt="Screenshot 2022-12-10 at 23 53 48" src="https://user-images.githubusercontent.com/89082482/206874853-10cb24bc-1a9b-44e5-96de-648377bb2ba6.png">
 
 ping с VPC1 на Router2, прошел успешно
-<img width="995" alt="Screenshot 2022-12-11 at 00 08 01" src="https://user-images.githubusercontent.com/89082482/206875320-904975da-3944-4748-8e39-9fa68d8e82b2.png">
+
+<img width="995" alt="Screenshot 2022-12-11 at 00 37 12" src="https://user-images.githubusercontent.com/89082482/206876159-14a47414-80e5-4102-a0a7-7add68eb9d36.png">
 
 ping с VPC2 на Router2, прошел успешно
 <img width="995" alt="Screenshot 2022-12-11 at 00 10 15" src="https://user-images.githubusercontent.com/89082482/206875375-c3f631da-324e-44a3-9815-55df7bf68b05.png">
