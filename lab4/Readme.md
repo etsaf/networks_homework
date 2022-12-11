@@ -1,6 +1,6 @@
 **Топология**
 
-<img width="837" alt="Screenshot 2022-12-11 at 22 23 25" src="https://user-images.githubusercontent.com/89082482/206924326-fcf84c8c-35a0-4f37-b8b0-4f9ad121eed8.png">
+<img width="837" alt="image" src="https://user-images.githubusercontent.com/89082482/206925014-6baebf9c-451a-47f0-9af9-24a5fba1a4ba.png">
 
 **Настройки на устройствах**
 
@@ -139,6 +139,7 @@ exit
 
 #configure GRE
 interface tunnel 200
+no shutdown
 tunnel mode gre ip
 ip address 172.17.3.2 255.255.255.0
 tunnel source 200.0.0.1
@@ -185,7 +186,6 @@ exit
 ip route 10.0.0.0 255.255.255.0 173.17.3.1
 ip route 0.0.0.0 0.0.0.0 150.0.0.254
 exit
-wr
 
 #configure ISAKMP
 
@@ -213,20 +213,25 @@ wr
 
 ```
 
+**Вывобы с устройств**
 
-Router1
+С VPC1 проходит ping на VPC2 и VPC3
+
+<img width="946" alt="Screenshot 2022-12-11 at 21 57 08" src="https://user-images.githubusercontent.com/89082482/206923206-02184ce8-e87e-4813-8fb2-de053e3262ba.png">
+
+На Router1 работает GRE-тоннель к Router2
+
+
+<img width="946" alt="Screenshot 2022-12-11 at 21 52 50" src="https://user-images.githubusercontent.com/89082482/206922983-8c0804b9-d563-4bee-b3b8-ff9262242427.png">
+
+На Router1 подключен GRE-тоннель поверх IPSec к Router3:
 
 <img width="946" alt="Screenshot 2022-12-11 at 21 58 39" src="https://user-images.githubusercontent.com/89082482/206923269-7b88627d-9166-48b1-9fb0-e8250f39e718.png">
 
 <img width="946" alt="Screenshot 2022-12-11 at 21 49 24" src="https://user-images.githubusercontent.com/89082482/206922832-d5ad5473-04a0-4104-b7cf-4a7b2060f0ee.png">
 
-Router3
+Он же на Router3
 
 <img width="946" alt="Screenshot 2022-12-11 at 21 50 03" src="https://user-images.githubusercontent.com/89082482/206922869-82ea359b-b09a-4e58-ba87-d89055a3d796.png">
 
 <img width="946" alt="Screenshot 2022-12-11 at 21 50 30" src="https://user-images.githubusercontent.com/89082482/206922883-f161142d-4dd1-4111-895d-951529c990ec.png">
-
-
-<img width="946" alt="Screenshot 2022-12-11 at 21 52 50" src="https://user-images.githubusercontent.com/89082482/206922983-8c0804b9-d563-4bee-b3b8-ff9262242427.png">
-
-<img width="946" alt="Screenshot 2022-12-11 at 21 57 08" src="https://user-images.githubusercontent.com/89082482/206923206-02184ce8-e87e-4813-8fb2-de053e3262ba.png">
