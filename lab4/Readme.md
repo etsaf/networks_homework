@@ -1,3 +1,5 @@
+Комментарии и описание ниже в Readme, конфиги всех устройств в папке configs, сама выгруженная лаба - файл homework42.unl
+
 **Топология**
 
 <img width="837" alt="image" src="https://user-images.githubusercontent.com/89082482/206925014-6baebf9c-451a-47f0-9af9-24a5fba1a4ba.png">
