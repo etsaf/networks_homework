@@ -56,7 +56,7 @@ exit
 ip nat pool HwPool 100.0.1.10 100.0.1.40 netmask 255.255.255.0
 access-list 1 permit 10.0.10.0 0.0.0.255
 access-list 1 permit 10.0.20.0 0.0.0.255
-ip nat inside source list 1 pool HwPool
+ip nat inside source list 1 pool HwPool overload
 
 interface e0/0
 ip nat inside
