@@ -215,14 +215,17 @@ wr
 
 **Вывобы с устройств**
 
-С VPC1 проходит ping на VPC2 и VPC3
+С VPC1 проходит ping на VPC2 и VPC3 и обратно
 
 <img width="946" alt="Screenshot 2022-12-11 at 21 57 08" src="https://user-images.githubusercontent.com/89082482/206923206-02184ce8-e87e-4813-8fb2-de053e3262ba.png">
 
 На Router1 работает GRE-тоннель к Router2
 
+<img width="919" alt="Screenshot 2022-12-11 at 23 02 32" src="https://user-images.githubusercontent.com/89082482/206926072-67346c2b-bb22-4c99-a266-5c1f241d46e6.png">
 
-<img width="946" alt="Screenshot 2022-12-11 at 21 52 50" src="https://user-images.githubusercontent.com/89082482/206922983-8c0804b9-d563-4bee-b3b8-ff9262242427.png">
+Он же на Router2
+
+<img width="919" alt="Screenshot 2022-12-11 at 23 04 38" src="https://user-images.githubusercontent.com/89082482/206926163-c67352fd-434e-4ab2-a4aa-94b9ae5b6e0a.png">
 
 На Router1 подключен GRE-тоннель поверх IPSec к Router3:
 
